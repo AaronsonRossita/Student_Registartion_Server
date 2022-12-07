@@ -15,8 +15,8 @@ public class CourseController {
     CourseService courseService;
 
     @PostMapping(value = "/create}")
-    @CrossOrigin(origins = "http://localhost:8080")
-    public Long createStudent(@RequestBody Course course){
+    @CrossOrigin
+    public Long createCourse(@RequestBody Course course){
        return courseService.createCourse(course);
     }
 
